@@ -1,3 +1,5 @@
+import TaskList from '_/shared/ui/task-list'
+
 export default async function Page() {
   const tasks = await fetch('http://localhost:3000/api/inbox', {
     next: {
@@ -6,8 +8,8 @@ export default async function Page() {
     },
   })
   return (
-    <section className='container mx-auto'>
-      <p className='text-lg text-white'>Inbox</p>
+    <section className='max-w-2xl mx-auto pt-12'>
+      <TaskList />
     </section>
   )
 }

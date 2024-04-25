@@ -17,10 +17,10 @@ export default function Navbar() {
             <Link
               href='/inbox'
               className={[
-                'text-sm text-white/40 hover:text-white flex gap-2.5 items-center pl-3 pr-3.5 py-1.5 rounded-full',
+                'text-sm hover:text-white flex gap-2.5 items-center pl-3 pr-3.5 py-1.5 rounded-full',
                 pathname == '/inbox'
-                  ? 'bg-gray-300/[0.05] backdrop-blur-md'
-                  : 'hover:bg-gray-300/[0.05]',
+                  ? 'bg-gray-300/[0.05] backdrop-blur-md text-white'
+                  : 'hover:bg-gray-300/[0.05] text-white/40',
               ].join(' ')}
             >
               <HInbox />
@@ -37,10 +37,10 @@ export default function Navbar() {
             <Link
               href='/group'
               className={[
-                'text-sm text-white/40 hover:text-white flex gap-2.5 items-center pl-3 pr-3.5 py-1.5 rounded-full',
+                'text-sm flex gap-2.5 items-center pl-3 pr-3.5 py-1.5 rounded-full',
                 pathname == '/group'
-                  ? 'bg-gray-300/[0.05] backdrop-blur-md'
-                  : 'hover:bg-gray-300/[0.05]',
+                  ? 'bg-gray-300/[0.05] backdrop-blur-md text-white'
+                  : 'hover:bg-gray-300/[0.05] text-white/40',
               ].join(' ')}
             >
               <HFolder />
